@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram>
+    <root>
+        <object label="menu" id="1">
+            <object label="item (category='food')" id="2">
+                <object label="name" id="3"/>
+                <object label="description" id="4"/>
+                <object label="price" id="5"/>
+            </object>
+            <object label="item (category='drinks')" id="6">
+                <object label="name" id="7"/>
+                <object label="price" id="8"/>
+            </object>
+        </object>
+        
+        <object label="branches" id="9">
+            <object label="branch (id='001')" id="10">
+                <object label="name" id="11"/>
+                <object label="address" id="12"/>
+                <object label="phone" id="13"/>
+                <object label="map" id="14"/>
+            </object>
+            <object label="branch (id='002')" id="15">
+                <object label="name" id="16"/>
+                <object label="address" id="17"/>
+                <object label="phone" id="18"/>
+                <object label="map" id="19"/>
+            </object>
+        </object>
+    </root>
+</diagram>

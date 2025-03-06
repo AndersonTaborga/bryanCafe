@@ -1,0 +1,468 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF3E0;
+    color: #3E2723;
+}
+
+header {
+    background-color: #4E342E;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #6D4C41;
+}
+
+.logo {
+    height: 50px; /* Ajuste a altura conforme necessário */
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+.banner {
+    text-align: center;
+    padding: 100px 0;
+    background: url('images/beans.jpg') no-repeat center;
+    background-size: cover;
+    color: white;
+    position: relative;
+    margin: 20px; /* Adicione esta linha para adicionar margem */
+    border-radius: 10px; /* Adicione esta linha para arredondar os cantos */
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.banner h1, .banner p {
+    position: relative;
+    z-index: 2;
+}
+
+.about.banner {
+    background: url('images/coffee shop exterior.jpg') no-repeat center;
+    background-size: cover;
+    padding: 100px 0;
+    color: white;
+    position: relative;
+    margin: 20px; /* Adicione esta linha para adicionar margem */
+    border-radius: 10px; /* Adicione esta linha para arredondar os cantos */
+}
+
+.history.banner {
+    background: url('images/history.jpg') no-repeat center;
+    background-size: cover;
+    padding: 100px 0;
+    color: white;
+    position: relative;
+    margin: 20px; /* Adicione esta linha para adicionar margem */
+    border-radius: 10px; /* Adicione esta linha para arredondar os cantos */
+}
+
+.menu-banner {
+    text-align: center;
+    padding: 100px 0;
+    background: url('images/shop-menu.jpg') no-repeat center;
+    background-size: cover;
+    color: white;
+    position: relative;
+    margin: 20px; /* Adicione esta linha para adicionar margem */
+    border-radius: 10px; /* Adicione esta linha para arredondar os cantos */
+}
+
+.menu-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.menu-banner h2, .menu-banner p {
+    position: relative;
+    z-index: 2;
+}
+
+.menu {
+    text-align: center;
+    padding: 40px;
+}
+
+.menu-filter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 12px 18px;
+    margin: 5px;
+    border: none;
+    background-color: #6D4C41;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.filter-btn:hover {
+    background-color: #4E342E;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+}
+
+.branch {
+    background: url('images/google-maps.jpg') no-repeat center;
+    background-size: cover;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.3s ease;
+    color: white;
+    position: relative;
+}
+
+.branch::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.branch * {
+    position: relative;
+    z-index: 2;
+}
+
+.branch:hover {
+    transform: scale(1.05);
+}
+
+.branch h4 {
+    color: white;
+}
+
+.branch p {
+    margin: 5px 0;
+}
+
+.branch a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.branch a:hover {
+    text-decoration: underline;
+}
+
+.about, .history {
+    text-align: center;
+    padding: 60px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.about h2, .history h2 {
+    color: white;
+}
+
+.contact {
+    text-align: center;
+    padding: 60px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.contact h2 {
+    color: #6D4C41;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #3E2723;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact button {
+    width: 100%; /* Adicione esta linha para aumentar o botão */
+    background-color: #53362c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #329e1c;
+}
+
+.contact #form-message {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #4E342E;
+    color: white;
+}
+
+.privacy-banner {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #ffffff, #f5f5f5);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.privacy-content {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+
+.privacy-banner h1 {
+   
+    z-index: 2;
+  
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.privacy-content {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.privacy-content h2, 
+.privacy-content h3 {
+    color: #3E2723;
+}
+
+.privacy-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #3E2723;
+}
+
+.privacy-content a {
+    color: #6D4C41;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.privacy-content a:hover {
+    color: #4E342E;
+    text-decoration: underline;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #FFD700;
+    text-decoration: underline;
+}
+/* Estilos Gerais */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF3E0;
+    color: #3E2723;
+}
+
+/* Estilos da Página de Privacidade */
+.privacy-banner {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #ffffff, #f5f5f5);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.privacy-banner h1 {
+    color: #4E342E;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.privacy-content {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.privacy-content h2, 
+.privacy-content h3 {
+    color: #4E342E;
+    margin-bottom: 10px;
+}
+
+.privacy-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #3E2723;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.privacy-content a {
+    color: #6D4C41;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.privacy-content a:hover {
+    color: #4E342E;
+    text-decoration: underline;
+}
+
+/* Estilos do Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4E342E;
+    color: white;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #FFD700;
+    text-decoration: underline;
+}

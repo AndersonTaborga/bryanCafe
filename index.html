@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryan’s Café - About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Bryan’s Café Logo" class="logo"></a>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1>Welcome to Bryan’s Café</h1>
+            <p>Experience the finest coffee and delicious meals in town.</p>
+        </section>
+
+        <section class="about banner">
+            <h2>About Us</h2>
+            <p>Bryan’s Café has been a staple in the community since 1999, offering premium coffee and fresh meals.</p>
+        </section>
+
+        <section class="history banner">
+            <h2>Our History</h2>
+            <p>From a small family-owned café to a beloved local brand, our journey has been one of passion and dedication.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Bryan's Café. All Rights Reserved.</p>
+        <p><a href="privacy-policy.html" target="_blank">Privacy Policy</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Atualiza automaticamente o ano no rodapé
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

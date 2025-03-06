@@ -1,0 +1,7 @@
+<!ELEMENT menu (item+)>
+<!ELEMENT item (name, description?, price, image)>
+<!ATTLIST item category CDATA #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT image (#PCDATA)>

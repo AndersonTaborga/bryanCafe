@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryan’s Café - Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Bryan’s Café Logo" class="logo"></a>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="menu-banner">
+        <h2>Delicious Menu</h2>
+        <p>Explore our handcrafted coffees, teas, and delightful treats.</p>
+    </section>
+    
+    <section class="menu">
+        <div class="menu-items">
+            <!-- Menu items will be loaded here -->
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; <span id="year"></span> Bryan's Café. All Rights Reserved.</p>
+        <p><a href="privacy-policy.html" target="_blank">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+    
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE menu SYSTEM "menu.dtd">
+<menu>
+    <item category="food">
+        <name>Beetroot and Feta Salad</name>
+        <description>Fresh beetroot slices combined with creamy feta cheese, drizzled with balsamic glaze.</description>
+        <price>$15.00</price>
+        <image>images/beetroot-salad.jpg</image>
+    </item>
+    <item category="food">
+        <name>Sourdough Rye Sandwich</name>
+        <description>A hearty sandwich with organic sourdough rye bread, filled with fresh vegetables and cheese.</description>
+        <price>$18.00</price>
+        <image>images/Sourdough-Rye-Sandwich.jpg</image>
+    </item>
+    <item category="food">
+        <name>Spinach Pie and Salad</name>
+        <description>Flaky spinach pie paired with a fresh garden salad, perfect for a light yet satisfying meal.</description>
+        <price>$20.00</price>
+        <image>images/Spinach-Pie-and-Salad.jpg</image>
+    </item>
+    <item category="food">
+        <name>Feta Pancakes with Salad</name>
+        <description>Savory pancakes stuffed with feta cheese, served with a refreshing side salad.</description>
+        <price>$19.50</price>
+        <image>images/Feta-Pancakes-with-Salad.jpg</image>
+    </item>
+    
+    <item category="coffee">
+        <name>Small Coffee</name>
+        <description>Perfectly brewed small cup of coffee to give you a quick energy boost.</description>
+        <price>$3.50</price>
+        <image>images/small.jpg</image>
+    </item>
+    <item category="coffee">
+        <name>Regular Coffee</name>
+        <description>A classic cup of coffee, brewed fresh for a rich and smooth experience.</description>
+        <price>$4.00</price>
+        <image>images/regular.jpg</image>
+    </item>
+    <item category="coffee">
+        <name>Large Coffee</name>
+        <description>For the true coffee lovers, a large cup of freshly brewed coffee to start the day.</description>
+        <price>$4.50</price>
+        <image>images/large.jpg</image>
+    </item>
+    
+    <item category="drinks">
+        <name>Soda</name>
+        <description>A selection of refreshing soft drinks, served chilled.</description>
+        <price>$3.00</price>
+        <image>images/soda.jpg</image>
+    </item>
+    <item category="drinks">
+        <name>Fresh Juice</name>
+        <description>Freshly squeezed juice made from seasonal fruits, packed with vitamins.</description>
+        <price>$6.00</price>
+        <image>images/fresh-juice.jpg</image>
+    </item>
+    <item category="drinks">
+        <name>Bottled Water</name>
+        <description>Pure, refreshing bottled water to keep you hydrated throughout the day.</description>
+        <price>$2.00</price>
+        <image>images/Bottled-Water.jpg</image>
+    </item>
+</menu>

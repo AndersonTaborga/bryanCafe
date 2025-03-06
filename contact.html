@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryan’s Café - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Bryan’s Café Logo" class="logo"></a>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+        <p id="form-message" class="hidden"></p>
+    </section>
+
+    <section class="branches">
+        <div id="branch-container">
+            <!-- Branches will be loaded here -->
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; <span id="year"></span> Bryan’s Café. All Rights Reserved.</p>
+        <p><a href="privacy-policy.html" target="_blank">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        // Atualiza automaticamente o ano no rodapé
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
